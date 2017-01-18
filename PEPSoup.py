@@ -4,6 +4,7 @@ import urllib.request
 def get_PEP_set():
     """
     scrapes all urls with the pep prefix from the pep index page and returns them as a set
+    note: scraped peps look like this - /dev/peps/pep-0010/ - and are strings.
     :return:
     """
     sauce = urllib.request.urlopen('https://www.python.org/dev/peps/').read()
