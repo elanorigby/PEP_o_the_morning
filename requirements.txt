@@ -1,0 +1,7 @@
+beautifulsoup4==4.5.3
+lxml==3.7.2
+pushbullet.py==0.10.0
+python-magic==0.4.12
+requests==2.12.5
+six==1.10.0
+websocket-client==0.40.0
