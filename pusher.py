@@ -1,5 +1,5 @@
 from pushbullet import Pushbullet
-from PEP_prep import get_push_pep
+from PEP_prep import make_push_pep
 import APIkeys
 
 #TODO check for pusbullet.py upgrade
@@ -11,7 +11,7 @@ pb = Pushbullet(APIkeys.pushbullet)
 pepo_chan = pb.channels[0]
 
 # grab a pep to push out
-push_pep = get_push_pep()
+push_pep = make_push_pep()
 
 # make push
 push = pepo_chan.push_link("PEP o' the morning to ya!", push_pep)

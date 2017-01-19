@@ -1,7 +1,7 @@
 import bs4 as bs
 import urllib.request
 
-def get_PEP_set():
+def get_fresh_peps():
     """
     scrapes all urls with the pep prefix from the pep index page and returns them as a set
     note: scraped peps look like this - /dev/peps/pep-0010/ - and are strings.
