@@ -1,5 +1,5 @@
 .idea/
 dunno/
 __pycache__/
-APIkeys.py
+secrets/
 prep_refactor.py
