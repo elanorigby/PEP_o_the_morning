@@ -18,4 +18,6 @@ and
 
 
 #### How to Run
-Run `python3 pusher.py` from within project folder
+* Make a virtualenv (or whatever)
+* Install requirements
+* Run `python3 pusher.py` from within project folder
