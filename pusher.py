@@ -1,12 +1,11 @@
 from pushbullet import Pushbullet
-
 from PEP_prep import make_push_pep
 from secrets import APIkeys
 
 #TODO check for pusbullet.py upgrade
 
-# identify self to ppushbullet api
-pb = Pushbullet(APIkeys.pushbullet)
+# identify self to pushbullet api
+pb = Pushbullet(APIkeys.pushapikey)
 
 # set channel to push to
 pepo_chan = pb.channels[0]
