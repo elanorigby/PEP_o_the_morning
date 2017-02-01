@@ -20,4 +20,5 @@ and
 #### How to Run
 * Make a virtualenv (or whatever)
 * Install requirements
+* get youself an api key from Pushbullet
 * Run `python3 pusher.py` from within project folder
