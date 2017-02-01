@@ -1,6 +1,11 @@
 appdirs==1.4.0
 beautifulsoup4==4.5.3
+click==6.7
+Flask==0.12
+itsdangerous==0.24
+Jinja2==2.9.5
 lxml==3.7.2
+MarkupSafe==0.23
 packaging==16.8
 pushbullet.py==0.10.0
 pyparsing==2.1.10
@@ -8,3 +13,4 @@ python-magic==0.4.12
 requests==2.13.0
 six==1.10.0
 websocket-client==0.40.0
+Werkzeug==0.11.15
