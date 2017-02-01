@@ -8,7 +8,7 @@ def make_push_pep(debug=True):
     fresh_peps = get_fresh_peps()
 
     # get used_peps list (from pickle)
-    used_peps = read_pickle('used.pickle')
+    used_peps = read_pickle('used.p')
 
     # make sure that there are some unused peps, if not reset used list to empty
     if used_peps == fresh_peps:
@@ -24,7 +24,7 @@ def make_push_pep(debug=True):
 
     pepo = get_pepo()
 
-    pickle_it('used.pickle', used_peps)
+    pickle_it('used.p', used_peps)
 
     push_pep = 'https://www.python.org' + pepo
 
