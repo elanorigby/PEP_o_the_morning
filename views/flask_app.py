@@ -10,4 +10,4 @@ def app_update(pepo, num):
     def index(pepo=pepo):
         return render_template('main.html', pepo=pepo, num=num)
 
-    app.run(debug=False)
+    app.run(debug=True)
