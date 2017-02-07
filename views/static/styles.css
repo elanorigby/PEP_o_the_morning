@@ -8,3 +8,11 @@ H1 {
     font-family: 'Luminari', 'sans-serif';
     font-size: 4em;
     }
+
+a {
+    color: black;
+   }
+
+a:hover {
+     color: yellow;
+    }
