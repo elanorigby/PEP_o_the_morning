@@ -4,15 +4,15 @@ body {
     margin-top: 200px;
 }
 
-H1 {
+h1 {
     font-family: 'Luminari', 'sans-serif';
     font-size: 4em;
-    }
+}
+
+h2 {
+    font-size: 1.5em;
+}
 
 a {
     color: black;
-   }
-
-a:hover {
-     color: yellow;
-    }
+}
