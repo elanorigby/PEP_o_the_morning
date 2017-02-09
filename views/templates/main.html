@@ -5,14 +5,14 @@
     <link rel="stylesheet" href="/static/styles.css">
     <title>PEPo</title>
     <style>
-        body {background-color:{{ color }}; }
+        body {background-color:{{ bkcolor }}; }
+        a:hover {color:{{ hovcolor }}; }
     </style>
 </head>
 <body>
-
     <h1>PEP o' the Morning to ya!</h1>
     <h2>Today's PEP is</h2>
-    <h3><a href={{ pepo }}> {{ pep_name }} </a></h3>
+    <h2><a href={{ pepo }}> {{ pep_name }} </a></h2>
 
 </body>
 </html>
