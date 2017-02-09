@@ -2,6 +2,7 @@ from PEPSoup import get_fresh_peps
 from pickle_town import pickle_it, read_pickle
 import random
 
+
 def make_push_pep(debug=False):
     # scrape for current peps
     fresh_peps = get_fresh_peps()
@@ -34,8 +35,3 @@ def make_push_pep(debug=False):
         print('got the pep! {}'.format(push_pep))
 
     return push_pep
-
-
-
-
-

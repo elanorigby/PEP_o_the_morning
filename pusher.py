@@ -1,11 +1,9 @@
 from pushbullet import Pushbullet
-from secrets import APIkeys
 
+from secrets import APIkeys
 from PEP_prep import make_push_pep
 from flask_app import app_update
 
-
-#TODO check for pusbullet.py upgrade
 
 # identify self to pushbullet api
 pb = Pushbullet(APIkeys.pushapikey)
@@ -21,3 +19,7 @@ push = pepo_chan.push_link("PEP o' the morning to ya!", push_pep)
 
 # update flask app with current pep
 app_update(push_pep)
+
+
+
+# TODO check for pusbullet.py upgrade
