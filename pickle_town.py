@@ -1,5 +1,6 @@
 import pickle
 
+
 def pickle_it(file, to_write):
     """
     replaces old data in pickle file with new data
@@ -33,5 +34,5 @@ def read_pickle(file):
 
 
 def used_hard_reset():
-    pickle_it('used.pickle', [])
-
+    pickle_it('used.p', [])
+    print("success")

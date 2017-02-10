@@ -1,0 +1,18 @@
+body {
+    font-family: 'Avenir', 'sans-serif';
+    text-align: center;
+    margin-top: 200px;
+}
+
+h1 {
+    font-family: 'Luminari', 'sans-serif';
+    font-size: 4em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+a {
+    color: black;
+}
