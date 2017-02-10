@@ -36,3 +36,5 @@ def read_pickle(file):
 def used_hard_reset():
     pickle_it('used.p', [])
     print("success")
+
+used_hard_reset()
