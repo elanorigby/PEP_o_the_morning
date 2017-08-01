@@ -1,0 +1,80 @@
+{
+    "_meta": {
+        "hash": {
+            "sha256": "293001b27927284323801b7f8c755a0ea894b4cffa4ef431159a8be3ab98c007"
+        },
+        "requires": {},
+        "sources": [
+            {
+                "url": "https://pypi.python.org/simple",
+                "verify_ssl": true
+            }
+        ]
+    },
+    "default": {
+        "beautifulsoup4": {
+            "version": "==4.5.3"
+        },
+        "certifi": {
+            "version": "==2017.7.27.1"
+        },
+        "chardet": {
+            "version": "==3.0.4"
+        },
+        "click": {
+            "version": "==6.7"
+        },
+        "colorama": {
+            "version": "==0.3.7"
+        },
+        "fields": {
+            "version": "==5.0.0"
+        },
+        "flask": {
+            "version": "==0.12"
+        },
+        "hunter": {
+            "version": "==1.4.1"
+        },
+        "idna": {
+            "version": "==2.5"
+        },
+        "itsdangerous": {
+            "version": "==0.24"
+        },
+        "jinja2": {
+            "version": "==2.9.6"
+        },
+        "lxml": {
+            "version": "==3.7.2"
+        },
+        "markupsafe": {
+            "version": "==1.0"
+        },
+        "pushbullet.py": {
+            "version": "==0.10.0"
+        },
+        "python-magic": {
+            "version": "==0.4.12"
+        },
+        "randomcolor": {
+            "version": "==0.4.4.4"
+        },
+        "requests": {
+            "version": "==2.13.0"
+        },
+        "six": {
+            "version": "==1.10.0"
+        },
+        "urllib3": {
+            "version": "==1.22"
+        },
+        "websocket-client": {
+            "version": "==0.40.0"
+        },
+        "werkzeug": {
+            "version": "==0.12.2"
+        }
+    },
+    "develop": {}
+}
