@@ -2,7 +2,7 @@ import bs4 as bs
 import urllib.request
 
 
-def get_fresh_peps():
+def peps():
     """
     scrapes all urls with the pep prefix from the pep index page and returns them as a set
     note: scraped peps look like this - /dev/peps/pep-0010/ - and are strings.
@@ -14,7 +14,7 @@ def get_fresh_peps():
     return peps
 
 
-def get_pep_name(push_pep):
+def title(push_pep):
     """
     gets full title of pep from the page of the pep
     :param push_pep:
@@ -23,3 +23,4 @@ def get_pep_name(push_pep):
     sauce = urllib.request.urlopen(push_pep).read()
     soup = bs.BeautifulSoup(sauce, 'lxml')
     return soup.find(class_='page-title').text
+
