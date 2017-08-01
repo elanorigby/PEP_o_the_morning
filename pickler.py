@@ -1,7 +1,7 @@
 import pickle
 
 
-def pickle_it(file, to_write):
+def pickleit(file, to_write):
     """
     replaces old data in pickle file with new data
     :param file:
@@ -12,7 +12,7 @@ def pickle_it(file, to_write):
         pickle.dump(to_write, f)
 
 
-def add_to_pickle(file, to_write):
+def add(file, to_write):
     """
     adds new data to old data in file
     :param file:
@@ -23,7 +23,7 @@ def add_to_pickle(file, to_write):
         pickle.dump(to_write, f)
 
 
-def read_pickle(file):
+def read(file):
     """
     gets useable python collection out of pickle file
     :param file:
@@ -34,5 +34,5 @@ def read_pickle(file):
 
 
 def used_hard_reset():
-    pickle_it('used.p', [])
+    pickleit('used.p', [])
     print("success")
