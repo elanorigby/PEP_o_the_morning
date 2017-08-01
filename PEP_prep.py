@@ -3,7 +3,17 @@ from pickle_town import pickle_it, read_pickle
 import random
 
 
-def make_push_pep(debug=False):
+def get_pepo(fresh_peps, used_peps):
+    pepo = random.choice(fresh_peps)
+    if pepo in used_peps:
+        get_pepo(fresh_peps, used_peps)
+    else:
+        used_peps.append(pepo)
+        return pepo
+    return pepo
+
+
+def make_push_pep(debug=True):
     # scrape for current peps
     fresh_peps = get_fresh_peps()
 
@@ -14,16 +24,7 @@ def make_push_pep(debug=False):
     if used_peps == fresh_peps:
         used_peps = []
 
-    def get_pepo():
-        pepo = random.choice(fresh_peps)
-        if pepo in used_peps:
-            get_pepo()
-        else:
-            used_peps.append(pepo)
-            return pepo
-        return pepo
-
-    pepo = get_pepo()
+    pepo = get_pepo(fresh_peps, used_peps)
 
     # put away new list of used peps
     pickle_it('used.p', used_peps)
@@ -33,5 +34,6 @@ def make_push_pep(debug=False):
 
     if debug:
         print('got the pep! {}'.format(push_pep))
-
     return push_pep
+
+make_push_pep()
